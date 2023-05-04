@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comentarios</title>
+    <script type="text/javascript" src="JS/jquery-3.6.3.js"></script>
+    <script type="text/javascript" src="JS/funciones.js"></script>
+    <link rel="stylesheet" type="text/css" href="CSS/Style.css"/>
+    <link rel="stylesheet" type="text/css" href="CSS/normalize.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/d2875ec451.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <nav>
+        <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+          <li><a href="menu.html">Menú</a></li>
+          <li><a href="Reserva.html">Reserva</a></li>
+    
+          <li class="submenu">
+            <a href="#">Acerca de&#9662;</a>
+            <ul>
+              <li><a href="#">Dirección</a></li>
+              <li><a href="#">QR</a></li>
+            </ul>
+          </li>
+    
+          <li class="submenu">
+            <a href="#">Contacto&#9662;</a>
+            <ul>
+              <li><a href="#">gourmet@gmail.com</a></li>
+              <li><a href="#">9612989479</a></li>
+              <li><a href="https://wa.me/529614533787">Whatsapp</a></li>
+            </ul>
+          </li>
+          <li class="submenu">
+    
+          <li class="submenu">
+            <a href="#">Búscanos&#9662;</a>
+            <ul>
+    
+              <li>
+                <a href="#"> <img src="IMG/facebooklogo.png" class="logoface logoredes">
+                  Facebook</a>
+              </li>
+    
+              <li>
+                <a href="#"> <img src="IMG/instalogo.png" class="logoinsta logoredes">
+                  Instagram</a>
+              </li>
+    
+              <li>
+                <a href="#"> <img src="IMG/tiktoklogo.png" class="logotiktok logoredes">
+                  Tiktok</a>
+              </li>
+              <ul>
+    
+    
+              </ul>
+          </li>
+        </ul>
+    
+      </nav>
+
+    <div class="cajacomentform cajacoment">
+      <h3 class="comenttitle">Deja tu comentario</h3>
+      <form id="commentform">
+        <div class="formulariocomment">
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="formulariocomment">
+          <label for="comment">Comentario:</label>
+          <textarea id="comment" name="comment" required></textarea>
+        </div>
+        <div class="formulariocomment">
+          <label for="date-time">Fecha y hora:</label>
+          <input type="text" id="fecha-hora" name="fecha-hora" readonly>
+        </div>
+        <div class="formulariocomment">
+          <button type="submit">Enviar comentario</button>
+        </div>
+      </form>
+    </div>
+    
+    <div class="commentcaja">
+      <h3>Comentarios:</h3>
+      <div id="comments"></div>
+    </div>
+    
+      
+      
+</body>
+
+</html>

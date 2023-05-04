@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Menú</title>
+    <script type="text/javascript" src="JS/jquery-3.6.3.js"></script>
+    <script type="text/javascript" src="JS/funciones.js"></script>
+    <link rel="stylesheet" type="text/css" href="CSS/Style.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/normalize.css" />
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"/>
+  </head>
+  <body>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="menu.html">Menú</a></li>
+
+        <li class="submenu">
+          <a href="#">Acerca de&#9662;</a>
+          <ul>
+            <li><a href="#">Dirección</a></li>
+            <li><a href="#">QR</a></li>
+          </ul>
+        </li>
+
+        <li class="submenu">
+          <a href="#">Contacto&#9662;</a>
+          <ul>
+            <li><a href="#">Correo Electrónico</a></li>
+            <li><a href="#">Número de Teléfono</a></li>
+            <li><a href="#">Whatsapp</a></li>
+          </ul>
+        </li>
+
+        <li class="submenu">
+          <a href="#">Búscanos&#9662;</a>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Tiktok</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <header class="headerreserva">
+      <img src="IMG/icono.png" id="iconoreserva">
+      <h1 class="tituloreserva">Reserva hoy y olvídate de los problemas</h1>
+    </header>
+
+    <div class="divformreserva">
+      <form class="formreserva" id="formmreserva">
+        <label for="nombrecliente">Nombre completo</label>
+        <input type="text" required class="opcionform" name="nombrecliente" id="name"/>
+
+        <label for="numerotelcliente" class="separadorform">Número de teléfono</label>
+        <input type="text" maxlength="10" required placeholder="+52" class="opcionform" name="numtelefono" id="numerotel"/>
+
+        <label for="correocliente" class="separadorform">Correo electrónico</label>
+        <input type="email" required class="opcionform" name="correocliente" id="correoelec"/>
+
+        <label for="fecha" class="separadorform">Fecha</label>
+        <input type="date" id="fechainput" name="fecha" class="opcionform fecha">
+
+        <label for="numpersonas" class="separadorform">Número de personas que asistirán</label>
+        <select name="numpersonas" id="numpersonasselect" class="opcionform numgente" required >
+          <option value="">Número de personas</option>
+          <option value="1persona">1</option>
+          <option value="2persona">2</option>
+          <option value="3persona">3</option>
+          <option value="4persona">4</option>
+          <option value="5persona">5</option>
+          <option value="6persona">6</option>
+        </select>
+
+        <label for="seccionpreferida" class="separadorform">Sección preferida del restaurante</label>
+        <select name="seccionpreferida" id="seccionpreferida" class="opcionform seccionrest" required>
+          <option value="">Selecciona tu sección preferida</option>
+          <option value="ventana">Ventanal</option>
+          <option value="seccpriv">Sección privada</option>
+          <option value="balcon">Balcón</option>
+          <option value="chimenea">Chimenea</option>
+          <option value="bar">Bar</option>
+          <option value="airelibre">Aire libre</option>
+        </select>
+
+        <label for="solicitudespecial" class="separadorform">¿Alguna solicitud especial?</label>
+        <input type="text" name="solicitudespecial" placeholder="Cumpleaños, decoraciones, etc..." class="opcionform" style="height: 35px;" id="solicitudesp">
+
+        <button type="submit" class="enviaform" id="enviarform">Enviar</button>
+
+        <footer class="footerform">
+          *La información recopilada en este formulario será<br> 
+          unicamente usada para la realización de la reserva<br> 
+          en el dia previamente seleccionado
+        </footer>
+      </form>
+    </div>
+
+    <div class="recibo">
+      <h3>Reservas:</h3>
+      <div id="recibos"></div>
+    </div>
+  </body>
+</html>

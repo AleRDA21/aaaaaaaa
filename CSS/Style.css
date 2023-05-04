@@ -1,0 +1,823 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #3c5148;
+}
+
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #1b2727;
+  text-align: center;
+  z-index: 2;
+}
+
+nav ul li {
+  display: inline-block;
+  position: relative;
+  font-family: "Quicksand";
+  font-weight: bold;
+}
+
+nav ul li a {
+  display: block;
+  padding: 0 7px;
+  color: lightgray;
+  font-size: 16px;
+  line-height: 60px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #666;
+  color: white;
+}
+
+nav ul li:hover > ul {
+  display: block;
+}
+
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 60px;
+}
+
+nav ul ul li {
+  width: 255px;
+  float: none;
+  display: list-item;
+  position: relative;
+}
+
+nav ul ul ul li {
+  position: relative;
+  top: -60px;
+  left: 200px;
+}
+
+
+.logoredes {
+  width: 3em;
+  height: 3em;
+}
+
+.logoface {
+  position: relative;
+  top: 13px;
+  right: 25px;
+}
+
+.logoinsta {
+  position: relative;
+  top: 15px;
+  right: 25px;
+}
+
+.logotiktok {
+  position: relative;
+  top: 15px;
+  right: 25px;
+  scale: 1.1;
+}
+
+/*Fin de la lista de navegación*/
+
+/*Pagina de inicio*/
+.logoytitulo {
+  display: inline-flex;
+  position: relative;
+  left: 25%;
+}
+
+.logo {
+  width: 300px;
+  height: 300px;
+}
+
+.restautitulo {
+  padding-top: 75px;
+  color: lightgray;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  font-size: 60px;
+  z-index: 1;
+}
+
+.infodeinicio {
+  display: inline-flex;
+  color: lightgray;
+  font-family: Quicksand;
+}
+
+.descripcioninicio {
+  width: 47%;
+  text-align: justify;
+  margin-left: 30px;
+  font-size: 20px;
+}
+
+.filosofiainicio {
+  width: 47%;
+  text-align: justify;
+  margin-left: 30px;
+  font-size: 20px;
+}
+
+.instalaciones {
+  margin: 30px;
+}
+
+.imginicio {
+  display: inline-flex;
+  height: 400px;
+  width: 759px;
+}
+
+.tituloinstalaciones {
+  text-align: center;
+  font-family: "Quicksand";
+  font-weight: bold;
+  font-size: 40px;
+  color: lightgray;
+}
+
+/*slider*/
+
+.deslizador {
+  display: flex;
+  height: auto;
+  width: auto;
+  overflow: hidden;
+  align-items: center;
+}
+
+.deslizador:before {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  content: "";
+  width: 25%;
+  height: 210px;
+  background: linear-gradient(-90deg, hsla(0, 0%, 0%, 0), #3c5148);
+}
+
+.deslizador:after {
+  position: absolute;
+  right: 0;
+  content: "";
+  width: 25%;
+  height: 210px;
+  background: linear-gradient(90deg, hsla(0, 0%, 0%, 0), #3c5148);
+}
+
+.deslizador .caminodeslizador {
+  display: flex;
+  animation: scroll 35s linear infinite;
+  -webkit-animation: scroll 35s linear infinite;
+  width: calc(240px * 10);
+}
+
+.deslizador .desliza {
+  display: flex;
+}
+
+.deslizador .desliza .slideimg {
+  width: 360px;
+  height: 180px;
+  padding: 10px;
+  background-color: #1b2727;
+  cursor: pointer;
+  margin: 30px;
+  border-radius: 8px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 5px 10px 0px,
+    rgba(0, 0, 0, 0.3) 0px 5px 10px 0px;
+}
+
+@keyframes scroll {
+  0% {
+    -webkit-transform: translate(0);
+    transform: translateX(0);
+  }
+
+  100% {
+    -webkit-transform: translateX(calc(-240px * 5));
+    transform: translateX(calc(-240px * 5));
+  }
+}
+
+.coments {
+  width: 95%; height: 200px;
+  background-color: #3a4a4a;
+  margin: 0 2%;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+  display: flex;
+}
+
+.divcoment {
+  width: 90%;height: 90%;
+  margin: auto;
+  display: flex;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  justify-content: center;
+}
+
+.divcoment1 {
+  width: 48%; height: 90%;
+}
+
+.divcoment2 {
+  width: 48%; height: 90%;
+  margin-left: 1%;
+}
+
+.pcoments1 {
+  font-family: "Quicksand";
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+  color: lightgray;
+}
+
+.pcoments2, .comentbutton {
+  font-family: "Quicksand";
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  color: lightgray;
+  justify-content: center;
+}
+
+
+
+.comenttitle {
+	text-align: center;
+  font-family: 'Quicksand';
+  font-size: 1.8em;
+  color: lightgray;
+}
+
+
+
+.cajacomentform, .commentcaja {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Quicksand';
+  color: white;
+}
+
+.cajacoment {
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.cajacomentform form {
+  display: inline-block;
+  text-align: left;
+}
+
+.cajacomentformr label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.cajacomentform input,
+.cajacomentform textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.cajacomentform button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cajacomentform button:hover {
+  background-color: #45a049;
+}
+
+.commentcaja .comment {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.commentcaja .comment .comment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.commentcaja .comment .comment-autor {
+  margin: 0;
+}
+
+.commentcaja .comment .comment-fecha {
+  font-size: 12px;
+  color: #888;
+}
+
+.commentcaja .comment .comment-texto {
+  margin: 0;
+}
+
+/*Fin de pagina de inicio*/
+
+/*Pagina del menú*/
+.popularesmenu,
+.titulomenucompleto {
+  font-family: "Quicksand";
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  color: lightgray;
+}
+
+/*slider de mas populares*/
+.deslizadormenu {
+  display: flex;
+  height: auto;
+  width: auto;
+  overflow: hidden;
+  align-items: center;
+}
+
+#deslizamenu {
+  justify-content: center;
+  text-align: center;
+  display: flex;
+}
+
+.textopopularmenu {
+  padding-top: 100px;
+  font-family: Trebuchet MS;
+  font-weight: bold;
+  font-size: 17px;
+  color: lightgray;
+  z-index: 0;
+  text-align: justify;
+}
+
+.deslizadormenu:before {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  content: "";
+  width: 25%;
+  height: 400px;
+  background: linear-gradient(-90deg, hsla(0, 0%, 0%, 0), #3c5148);
+}
+
+.deslizadormenu:after {
+  position: absolute;
+  right: 0;
+  content: "";
+  width: 25%;
+  height: 400px;
+  background: linear-gradient(90deg, hsla(0, 0%, 0%, 0), #3c5148);
+}
+
+.deslizadormenu .caminodeslizadormenu {
+  display: flex;
+  animation: scroll 35s linear infinite;
+  -webkit-animation: scroll 35s linear infinite;
+  width: calc(240px * 10);
+}
+
+.deslizadormenu .deslizamenu {
+  display: flex;
+}
+
+.deslizadormenu .deslizamenu .slidemenuimg {
+  width: 360px;
+  height: 70%;
+  padding: 10px;
+  background-color: #1b2727;
+  cursor: pointer;
+  margin: 30px;
+  border-radius: 8px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 5px 10px 0px,
+    rgba(0, 0, 0, 0.3) 0px 5px 10px 0px;
+}
+
+@keyframes scroll {
+  0% {
+    -webkit-transform: translate(0);
+    transform: translateX(0);
+  }
+
+  100% {
+    -webkit-transform: translateX(calc(-300px * 5));
+    transform: translateX(calc(-300px * 5));
+  }
+}
+/*Fin del slider del menu*/
+
+.cajamenucompleto {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+}
+
+.categoriasmenu {
+  font-family: "Quicksand";
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  color: lightgray;
+  cursor: default;
+}
+
+.cajaentradas {
+  margin: 30px;
+  border-radius: 20px;
+  border: 1px #152727 solid;
+  transform: scale(1);
+  transition: 0.3s;
+}
+
+.imgentradas {
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  border-radius: 25px;
+}
+
+.subcajaentradas {
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(2, minmax(100px, 1fr));
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.entrada1,
+.entrada2,
+.entrada3,
+.entrada4,
+.entrada5,
+.entrada6 {
+  font-family: "Trebuchet MS";
+  font-size: 20px;
+  color: lightgray;
+  text-align: center;
+  margin: 30px;
+  border: 1px #152727 solid;
+  padding: 5px;
+  padding: 10px;
+  background-color: #3c5148;
+  border-radius: 20px;
+  cursor: default;
+}
+
+.cajaplatillosf {
+  margin: 30px;
+  border-radius: 20px;
+  border: 1px #152727 solid;
+  transform: scale(1);
+  transition: 0.3s;
+}
+
+.imgplatillosf {
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  border-radius: 25px;
+}
+
+.subcajaplatillosf {
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(2, minmax(100px, 1fr));
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.platillosf1,
+.platillosf2,
+.platillosf3,
+.platillosf4,
+.platillosf5,
+.platillosf6 {
+  font-family: "Trebuchet MS";
+  font-size: 20px;
+  color: lightgray;
+  text-align: center;
+  margin: 30px;
+  border: 1px #152727 solid;
+  padding: 10px;
+  background-color: #3c5148;
+  border-radius: 20px;
+  cursor: default;
+}
+
+.cajapostres {
+  margin: 30px;
+  border-radius: 20px;
+  border: 1px #152727 solid;
+  transform: scale(1);
+  transition: 0.3s;
+}
+
+.imgpostres {
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  border-radius: 25px;
+}
+
+.subcajapostres {
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(2, minmax(100px, 1fr));
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.postres1,
+.postres2,
+.postres3,
+.postres4,
+.postres5,
+.postres6 {
+  font-family: "Trebuchet MS";
+  font-size: 20px;
+  color: lightgray;
+  text-align: center;
+  margin: 30px;
+  border: 1px #152727 solid;
+  padding: 10px;
+  background-color: #3c5148;
+  border-radius: 20px;
+  cursor: default;
+}
+
+.subcajabebidas {
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(2, minmax(100px, 1fr));
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.cajabebidas {
+  margin: 30px;
+  border-radius: 20px;
+  border: 1px #152727 solid;
+  transform: scale(1);
+  transition: 0.5s;
+}
+
+.imgbebidas {
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  border-radius: 25px;
+}
+
+.bebidas1,
+.bebidas2,
+.bebidas3,
+.bebidas4,
+.bebidas5,
+.bebidas6 {
+  font-family: "Trebuchet MS";
+  font-size: 20px;
+  color: lightgray;
+  text-align: center;
+  margin: 30px;
+  border: 1px #152727 solid;
+  padding: 10px;
+  background-color: #3c5148;
+  border-radius: 20px;
+  cursor: default;
+}
+
+.cajaentradas,
+.cajaplatillosf,
+.cajapostres,
+.cajabebidas {
+  -webkit-box-shadow: 10px 10px 24px 0px rgba(27, 39, 39, 0.67);
+  -moz-box-shadow: 10px 10px 24px 0px rgba(27, 39, 39, 0.67);
+  box-shadow: 10px 10px 24px 0px rgba(27, 39, 39, 0.67);
+}
+
+.cajaentradas:hover,
+.cajaplatillosf:hover,
+.cajapostres:hover,
+.cajabebidas:hover {
+  transform: scale(1.01);
+  transition: 0.5s;
+  background-color: #425656;
+}
+
+.hovermenu {
+  transform: scale(1);
+  transition: 0.5s;
+  -webkit-box-shadow: 8px 8px 24px 0px rgba(27, 39, 39, 0.67);
+  -moz-box-shadow: 8px 8px 24px 0px rgba(27, 39, 39, 0.67);
+  box-shadow: 8px 8px 24px 0px rgba(27, 39, 39, 0.67);
+}
+
+.hovermenu:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+  background-color: #3a4a4a;
+}
+/*Fin de la página del menú*/
+
+/*Inicio de pagina de reserva*/
+
+.headerreserva{
+  text-align: center;
+  font-family: 'Quicksand';
+  font-weight: bold;
+  font-size: 125%;
+  color: lightgray;
+}
+
+.tituloreserva {
+  margin-top: 10px;
+}
+
+#iconoreserva {
+  width: 200px;
+  height: 200px;
+}
+
+/*Formulario*/
+.divformreserva {
+  display: grid;
+  place-items: center;
+  border: #152727 3px solid;
+  border-radius: 10px;
+  margin: 0% 10% 3% 10%;
+  background-color: #1b2727;
+  box-shadow: 20px 10px 50px 7px rgba(27, 39, 39, 0.9);
+}
+
+.formreserva {
+  display:grid;
+  place-items: center;
+  padding:  3% 20%;
+  font-family: 'Trebuchet MS';
+  font-weight: bold;
+  font-size: 18px;
+  color: lightgray;
+  border-radius: 10px;
+  margin: 20px 0;
+  background-color: #3a4a4a;
+  box-shadow: 5px 5px 15px 4px rgba(0, 0, 0, 0.7);
+}
+
+.separadorform{
+  margin-top: 20px;
+}
+
+.opcionform{
+  border-radius: 5px;
+  margin-top: 5px;
+  width: 100%;
+  transition: 0.5s;
+  background-color: lightgray;
+  color: #152727;
+}
+
+.opcionform:hover{
+  transform: scaleX(1.1);
+
+}
+
+.enviaform{
+  margin-top: 20px;
+  position: relative;
+  left: 105px;
+  background-color: #b2c5b2;
+  border-radius: 5px;
+  scale: 1.2;
+  transition: 0.5s;
+  font-family: 'Trebuchet MS';
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.enviaform:hover{
+  transform: scale(1.1);
+}
+
+.footerform {
+  font-size: 11.5px;
+  text-align: justify;
+  margin-top: 25px;
+  cursor: default;
+}
+
+/*Fin formulario*/
+
+
+.recibo {
+  text-align: center;
+  font-family: 'Quicksand';
+  font-size: 2rem;
+  color: lightgray;
+}
+
+
+.recibo .recibo1 {
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.recibo .recibo1 .comment-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.recibo .recibo1 .receipt-name {
+  font-size: 1.8rem;
+  color: lightgray;
+}
+
+.recibo .recibo1 .receipt-numero {
+  font-size: 1.5rem;
+  color: lightgray;
+}
+
+.recibo .recibo1 .receipt-email {
+  font-size: 1.5rem;
+  color: lightgray;
+}
+
+.recibo .recibo1 .receipt-fecha {
+  font-size: 1.5rem;
+  color: lightgray;
+}
+
+.recibo .recibo1 .receipt-personas {
+  font-size: 1.5rem;
+  color: lightgray;
+}
+
+.recibo .recibo1 .receipt-seccion {
+  font-size: 1.5rem;
+  color: lightgray;
+}
+
+.recibo .recibo1 .receipt-solicitud {
+  font-size: 1.5rem;
+  color: lightgray;
+}
+
+.recibo1 {
+  margin:1% 25%;
+  display: flex;
+  
+}
+.comment-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.receipt-name, .receipt-numero, .receipt-email, .receipt-fecha, .receipt-personas, .receipt-seccion, .receipt-solicitud {
+  /*margin: 25px;
+  display: flex;*/
+  margin: 15px 0;
+  width: 100%;
+  height: 50px;
+  text-align: left;
+}
+
+.recibo {
+  margin-bottom: 40px;
+}
+
+.recibo1 {
+  margin-top: 30px;
+  box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.7);
+  background-color: #3a4a4a;
+}
+/*Fin de pagina de reserva*/
