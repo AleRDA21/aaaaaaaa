@@ -18,6 +18,7 @@ $(document).ready(function() {
     var name = $('#name').val();
     var comment = $('#comment').val();
     var dateTime = $('#fecha-hora').val();
+    var email = $('#email').val();
 
     // Crear un nuevo elemento de comentario
     var newComment = $('<div>').addClass('comment');
@@ -25,10 +26,11 @@ $(document).ready(function() {
     var commentAuthor = $('<h4>').addClass('comment-autor').text(name);
     var commentDate = $('<span>').addClass('comment-fecha').text(dateTime);
     var commentText = $('<p>').addClass('comment-text').text(comment);
+    var commentEmail = $('<p>').addClass('comment-text').text(email);
 
     // Agregar el encabezado y el contenido del comentario al elemento de comentario
     commentHeader.append(commentAuthor).append(commentDate);
-    newComment.append(commentHeader).append(commentText);
+    newComment.append(commentHeader).append(commentEmail).append(commentText);
 
     // Agregar el nuevo comentario al contenedor de comentarios y restablecer el formulario
     $('#comments').prepend(newComment);
