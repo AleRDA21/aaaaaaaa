@@ -822,8 +822,14 @@ nav ul ul ul li {
 }
 /*Fin de pagina de reserva*/
 
-iframe
-{
-  position: relative;
-  left: 125px;
+.commentsfacebook {
+  background-color: white;
+  margin: 0 5%;
+  padding: 15px;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.5);
+}
+
+.mmapbox {
+  display: grid;
+  justify-content: center;
 }
