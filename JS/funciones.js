@@ -75,7 +75,58 @@ $(document).ready(function() {
     $('#enviarform').click(function() {
       alert('Tu reserva ha sido correcta');
     });
-});
+  });
+
+
+  //   	var token="GA230522212545";
+	// 	var api ="https://script.google.com/macros/s/AKfycbyoBhxuklU5D3LTguTcYAS85klwFINHxxd-FroauC4CmFVvS0ua/exec";
+
+			
+	// 	$("#enviarform").click(function() {
+	// 		 var  payload = {"op": "registermessage","token_qr": token, "mensajes": [
+	// 						{"numero": $("#numerotel").val(),"mensaje": "¡Tu reserva ha sido exitosa! A continuación verás un resumen con tus datos previamente introducidos*"+$("#name").val()+"*"+$("#numerotel").val()+"*"+$("#correoelec").val()+"*"+$("#fechainput").val()+"*"+$("#numpersonasselect").val()+"*"+$("#seccionpreferida").val()+"*"+$("#solicitudesp").val()+"*"}]};
+  //             ///	{"numero": $("#numerotel").val(),"mensaje": "¡Tu reserva ha sido exitosa! A continuación verás un resumen con tus datos previamente introducidos:*"+$("#name").val()+$("#numerotel").val()+$("#correoelec").val()+$("#fechainput").val()+$("#numpersonasselect").val()+$("#seccionpreferida").val()+$("#solicitudesp").val()+"*"}]};
+	// 		 $.ajax({
+	// 			 url: api,
+	// 			 jsonp: "callback",
+	// 			 method: 'POST',
+	// 			 data : JSON.stringify(payload),
+	// 			 async: false,
+	// 			 success: function(respuestaSolicitud) {
+	// 					alert(respuestaSolicitud.message);
+	// 			 }
+	// 		 });
+  //        });
+  //   });	
+
+	// function base64(file, callback){
+	// 	  var coolFile = {};
+	// 	  function readerOnload(e){
+	// 		var base64 = btoa(e.target.result);
+	// 		coolFile.base64 = base64;
+	// 		callback(coolFile)
+	// 	  };
+
+	// 	  var reader = new FileReader();
+	// 	  reader.onload = readerOnload;
+
+	// 	  var file = file[0].files[0];
+	// 	  coolFile.filetype = file.type;
+	// 	  coolFile.size = file.size;
+	// 	  coolFile.filename = file.name;
+	// 	  reader.readAsBinaryString(file);
+	// }
+	// async function subirFoto(id){
+	// 	var foto = await new Promise((resolve, reject) => {
+	// 		base64( $('#'+id), function(data){
+	// 			resolve(data.base64)
+	// 		});
+	// 	});
+	// 	$("#"+id+"_base64").val(foto);
+	// 	console.log(foto);
+	// }
+    
+
 
 
 
