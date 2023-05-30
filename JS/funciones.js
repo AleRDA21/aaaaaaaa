@@ -1,3 +1,12 @@
+document.addEventListener('DOMContentLoaded', function ()
+{
+
+if (Notification.permission !== "granted")
+{
+Notification.requestPermission();
+}
+
+});
 
 $(document).ready(function() {
   // Obtener el campo de fecha y hora
