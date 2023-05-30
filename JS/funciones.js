@@ -85,6 +85,7 @@ $(document).ready(function() {
     $('#enviarform').click(function() {
       alert('Tu reserva ha sido correcta');
     });
+});
 
 
 
@@ -116,7 +117,7 @@ $(document).ready(function() {
       
 
 
-  });
+  
 
   
 
