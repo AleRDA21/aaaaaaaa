@@ -121,7 +121,7 @@ $(document).ready(function() {
 
   
 
- /   function push(){
+    function push(){
 
       var namee = $('#name').val();
       var tell = $('#numerotel').val();
