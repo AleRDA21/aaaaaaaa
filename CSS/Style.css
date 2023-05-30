@@ -779,14 +779,26 @@ nav ul ul ul li {
   font-family: 'Quicksand';
   font-size: 2rem;
   color: lightgray;
+  margin: 10px 10%;
+  min-width: 500px;
 }
 
 
 .recibo .recibo1 {
   border-radius: 14px;
-  padding: 20px;
-  margin-bottom: 10px;
-  text-align: left;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width:1000px){
+  .recibo, .recibo1 {
+    margin: 10px 3%;
+    min-width: 300px;
+  }
 }
 
 .recibo .recibo1 .comment-header {
@@ -797,7 +809,7 @@ nav ul ul ul li {
 }
 
 .recibo .recibo1 .receipt-name {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   color: lightgray;
 }
 
@@ -832,8 +844,9 @@ nav ul ul ul li {
 }
 
 .recibo1 {
+  padding: 20px;
   margin:1% 25%;
-  display: flex;
+  
   
 }
 .comment-header {
