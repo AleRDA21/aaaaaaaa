@@ -504,10 +504,9 @@ nav ul ul ul li {
 }
 
 .imgentradas {
-  width: 200px;
-  height: 200px;
-  padding: 10px;
+  width: 95%;
   border-radius: 25px;
+  display:block;
 }
 
 .subcajaentradas {
@@ -529,7 +528,6 @@ nav ul ul ul li {
   text-align: center;
   margin: 7px;
   border: 1px #152727 solid;
-  padding: 5px;
   padding: 10px;
   background-color: #3c5148;
   border-radius: 20px;
@@ -545,10 +543,9 @@ nav ul ul ul li {
 }
 
 .imgplatillosf {
-  width: 200px;
-  height: 200px;
-  padding: 10px;
+  width: 95%;
   border-radius: 25px;
+  display:block;
 }
 
 .subcajaplatillosf {
@@ -585,10 +582,9 @@ nav ul ul ul li {
 }
 
 .imgpostres {
-  width: 200px;
-  height: 200px;
-  padding: 10px;
+  width: 95%;
   border-radius: 25px;
+  display:block;
 }
 
 .subcajapostres {
@@ -632,10 +628,9 @@ nav ul ul ul li {
 }
 
 .imgbebidas {
-  width: 200px;
-  height: 200px;
-  padding: 10px;
+  width: 95%;
   border-radius: 25px;
+  display:block;
 }
 
 .bebidas1,
