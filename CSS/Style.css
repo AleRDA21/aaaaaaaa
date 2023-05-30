@@ -1,5 +1,3 @@
-<link rel="stylesheet" media="only screen and (max-width: 768px)" href="estilos.css">
-
 html {
   scroll-behavior: smooth;
 }
@@ -92,9 +90,9 @@ nav ul ul ul li {
 
 /*Pagina de inicio*/
 .logoytitulo {
-  display: inline-flex;
-  position: relative;
-  left: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .logo {
@@ -103,7 +101,9 @@ nav ul ul ul li {
 }
 
 .restautitulo {
-  padding-top: 75px;
+  margin-left: 10px;
+  display: flex;
+  vertical-align: auto;
   color: lightgray;
   font-family: "Quicksand", sans-serif;
   font-weight: bold;
@@ -111,24 +111,55 @@ nav ul ul ul li {
   z-index: 1;
 }
 
+@media (max-width: 1000px) {
+  .logoytitulo {
+    display: grid;
+    grid-auto-rows: repeat(2,2fr);
+    justify-content: center;
+  }
+
+  .cajalogo {
+    display: flex;
+    justify-content: center;
+
+  }
+}
+
 .infodeinicio {
-  display: inline-flex;
+  display: flex;
   color: lightgray;
   font-family: Quicksand;
+  padding: 15px;
 }
 
 .descripcioninicio {
-  width: 47%;
+  width:50%;
   text-align: justify;
-  margin-left: 30px;
   font-size: 20px;
+  padding: 10px;
 }
 
 .filosofiainicio {
-  width: 47%;
+  width: 50%;
   text-align: justify;
-  margin-left: 30px;
   font-size: 20px;
+  padding: 10px;
+}
+
+@media (max-width: 1000px) {
+  .infodeinicio {
+    display: grid;
+    grid-template-rows: repeat(2,5fr);
+    margin: 20px;
+  }
+
+  .descripcioninicio {
+    width: 100%;
+  }
+
+  .filosofiainicio {
+    width: 100%;
+  }
 }
 
 .instalaciones {
@@ -233,14 +264,21 @@ nav ul ul ul li {
 
 .divcoment1 {
   width: 48%; height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .divcoment2 {
   width: 48%; height: 90%;
-  margin-left: 1%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .pcoments1 {
+  display: flex;
+  align-items: center;
   font-family: "Quicksand";
   font-size: 35px;
   font-weight: bold;
@@ -269,8 +307,7 @@ nav ul ul ul li {
 
 
 .cajacomentform, .commentcaja {
-  max-width: 1000px;
-  margin: 0 auto;
+  margin: 0 10%;
   text-align: center;
   font-family: 'Quicksand';
   color: white;
@@ -438,8 +475,15 @@ nav ul ul ul li {
 
 .cajamenucompleto {
   display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto;
+  grid-template-rows: repeat(2,2fr);
+  grid-template-columns: repeat(2,2fr);
+  margin: 10px 5%;
+}
+
+@media (max-width: 1000px) {
+  .cajamenucompleto{
+    grid-template-columns: repeat(1,1fr);
+  }
 }
 
 .categoriasmenu {
@@ -452,7 +496,7 @@ nav ul ul ul li {
 }
 
 .cajaentradas {
-  margin: 30px;
+  margin: 15px;
   border-radius: 20px;
   border: 1px #152727 solid;
   transform: scale(1);
@@ -483,7 +527,7 @@ nav ul ul ul li {
   font-size: 20px;
   color: lightgray;
   text-align: center;
-  margin: 30px;
+  margin: 7px;
   border: 1px #152727 solid;
   padding: 5px;
   padding: 10px;
@@ -493,7 +537,7 @@ nav ul ul ul li {
 }
 
 .cajaplatillosf {
-  margin: 30px;
+  margin: 15px;
   border-radius: 20px;
   border: 1px #152727 solid;
   transform: scale(1);
@@ -524,7 +568,7 @@ nav ul ul ul li {
   font-size: 20px;
   color: lightgray;
   text-align: center;
-  margin: 30px;
+  margin: 7px;
   border: 1px #152727 solid;
   padding: 10px;
   background-color: #3c5148;
@@ -533,7 +577,7 @@ nav ul ul ul li {
 }
 
 .cajapostres {
-  margin: 30px;
+  margin: 15px;
   border-radius: 20px;
   border: 1px #152727 solid;
   transform: scale(1);
@@ -564,7 +608,7 @@ nav ul ul ul li {
   font-size: 20px;
   color: lightgray;
   text-align: center;
-  margin: 30px;
+  margin: 7px;
   border: 1px #152727 solid;
   padding: 10px;
   background-color: #3c5148;
@@ -580,7 +624,7 @@ nav ul ul ul li {
 }
 
 .cajabebidas {
-  margin: 30px;
+  margin: 15px;
   border-radius: 20px;
   border: 1px #152727 solid;
   transform: scale(1);
@@ -604,7 +648,7 @@ nav ul ul ul li {
   font-size: 20px;
   color: lightgray;
   text-align: center;
-  margin: 30px;
+  margin: 7px;
   border: 1px #152727 solid;
   padding: 10px;
   background-color: #3c5148;
@@ -832,6 +876,7 @@ nav ul ul ul li {
 }
 
 .mmapbox {
-  display: grid;
+  display: flex;
   justify-content: center;
+  margin:20px 10%;
 }
