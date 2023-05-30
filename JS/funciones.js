@@ -90,30 +90,30 @@ $(document).ready(function() {
 
 
 
-    $('#formmreserva').submit(function(event) {
-    event.preventDefault(); // Evita el envío del formulario
+   // $('#formmreserva').submit(function(event) {
+   //event.preventDefault(); // Evita el envío del formulario
 
     //Obtén los valores del formulario
-       var namee = $('#name').val();
-      var tell = $('#numerotel').val();
-      var emaill = $('#correoelec').val();
-      var datee = $('#fechainput').val();
-      var numpeoplee = $('#numpersonasselect').val();
-      var sectionnn = $('#seccionpreferida').val();
-      var requestt = $('#solicitudesp').val();
+    //  var namee = $('#name').val();
+    //  var tell = $('#numerotel').val();
+    //  var emaill = $('#correoelec').val();
+    //  var datee = $('#fechainput').val();
+    //  var numpeoplee = $('#numpersonasselect').val();
+    //  var sectionnn = $('#seccionpreferida').val();
+    //  var requestt = $('#solicitudesp').val();
 
     //   // Crea la notificación
-       if (Notification && Notification.permission === 'granted') {
-         var options = {
-           body:namee + '-' + tell + '-' + emaill + '-' + datee + '-' + numpeoplee + '-' + sectionnn + '-' + requestt,
-           icon: 'img/icono.png' // Ruta a la imagen del icono de la notificación
-         };
+    //   if (Notification && Notification.permission === 'granted') {
+    //     var options = {
+    //       body:namee + '-' + tell + '-' + emaill + '-' + datee + '-' + numpeoplee + '-' + sectionnn + '-' + requestt,
+    //       icon: 'img/icono.png' // Ruta a la imagen del icono de la notificación
+    //     };
 
-        var notificacion = new Notification('¡Tu reserva se ha hecho correctamente!', options);
-       } else {
-         alert('Las notificaciones no están habilitadas en este navegador.');
-       }
-    });
+    //    var notificacion = new Notification('¡Tu reserva se ha hecho correctamente!', options);
+    //   } else {
+    //     alert('Las notificaciones no están habilitadas en este navegador.');
+    //   }
+    //  });
       
 
 
