@@ -480,7 +480,7 @@ nav ul ul ul li {
   margin: 10px 5%;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1300px) {
   .cajamenucompleto{
     grid-template-columns: repeat(1,1fr);
   }
