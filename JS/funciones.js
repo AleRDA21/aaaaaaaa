@@ -1,3 +1,13 @@
+document.addEventListener('DOMContentLoaded', function ()
+{
+
+if (Notification.permission !== "granted")
+{
+Notification.requestPermission();
+}
+
+});
+
 $(document).ready(function() {
   // Obtener el campo de fecha y hora
   var dateTimeField = $('#fecha-hora');
@@ -75,7 +85,85 @@ $(document).ready(function() {
     $('#enviarform').click(function() {
       alert('Tu reserva ha sido correcta');
     });
+
+
+
+
+    // $('#formmreserva').submit(function(event) {
+    //   event.preventDefault(); // Evita el envío del formulario
+
+    //   // Obtén los valores del formulario
+    //   var name = $('#name').val();
+    //   var tel = $('#numerotel').val();
+    //   var email = $('#correoelec').val();
+    //   var date = $('#fechainput').val();
+    //   var numpeople = $('#numpersonasselect').val();
+    //   var sectionn = $('#seccionpreferida').val();
+    //   var request = $('#solicitudesp').val();
+
+    //   // Crea la notificación
+    //   if (Notification && Notification.permission === 'granted') {
+    //     var options = {
+    //       body: 'Nombre: ' + name + '\nNúmero: ' + tel + '\nEmail: ' + email + '\nFecha: ' + date + '\nPersonas: ' + numpeople + '\nSección: ' + sectionn + '\nSolicitud: ' + request,
+    //       icon: 'img/icono.png' // Ruta a la imagen del icono de la notificación
+    //     };
+
+    //     var notificacion = new Notification('¡Tu reserva se ha hecho correctamente!', options);
+    //   } else {
+    //     alert('Las notificaciones no están habilitadas en este navegador.');
+    //   }
+    // });
+      
+
+
   });
+
+  
+
+    function push(){
+
+      var namee = $('#name').val();
+      var tell = $('#numerotel').val();
+      var emaill = $('#correoelec').val();
+      var datee = $('#fechainput').val();
+      var numpeoplee = $('#numpersonasselect').val();
+      var sectionnn = $('#seccionpreferida').val();
+      var requestt = $('#solicitudesp').val();
+
+    Push.Permission.request();
+    Push.create('¡Tu reserva ha sido hecha correctamente!',{
+    body: namee + '-' + tell + '-' + emaill + '-' + datee + '-' + numpeoplee + '-' + sectionnn + '-' + requestt,
+    icon: "img/icono.png",
+    timeout: 1500000,
+    vibrate: [100, 100, 100],
+    onClick: function() {
+
+      window.location="https://google.com";
+
+      console.log(this);
+        }
+      });
+    }
+
+    
+    // Push.Permission.request();
+    // Push.create('¡Tu reserva ha sido hecha correctamente!',{
+    // body: 'Nombre: ' + namee + '\nTeléfono: ' + tell + '\nCorreo: ' + emaill + '\nFecha: ' + datee + '\nPersonas: ' + numpeoplee + '\nSección: ' + sectionnn + '\nSolicitud: ' + requestt,
+    // icon: "img/icono.png",
+    // timeout: 1500000,
+    // vibrate: [100, 100, 100],
+    // onClick: function() {
+
+    //   window.location="https://google.com";
+
+    //   console.log(this);
+    //     }
+    //   });
+    // }
+
+     
+
+  
 
 
   //   	var token="GA230522212545";
@@ -126,7 +214,7 @@ $(document).ready(function() {
 	// 	console.log(foto);
 	// }
     
-
+  
 
 
 
