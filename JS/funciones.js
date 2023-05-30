@@ -132,7 +132,7 @@ $(document).ready(function() {
       var requestt = $('#solicitudesp').val();
 
     Push.Permission.request();
-    Push.create('¡Tu reserva ha sido hecha correctamente! push',{
+    Push.create('¡Tu reserva ha sido hecha correctamente!',{
     body: namee + '-' + tell + '-' + emaill + '-' + datee + '-' + numpeoplee + '-' + sectionnn + '-' + requestt,
     icon: "IMG/icono.png",
     timeout: 1500000,
