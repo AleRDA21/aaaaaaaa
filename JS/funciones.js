@@ -133,7 +133,7 @@ $(document).ready(function() {
     Push.Permission.request();
     Push.create('¡Tu reserva ha sido hecha correctamente!',{
     body: namee + '-' + tell + '-' + emaill + '-' + datee + '-' + numpeoplee + '-' + sectionnn + '-' + requestt,
-    icon: "img/icono.png",
+    icon: "IMG/icono.png",
     timeout: 1500000,
     vibrate: [100, 100, 100],
     onClick: function() {
